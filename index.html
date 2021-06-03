@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<head>
+    <title>Family book</title>
+  <script>
+    var images =[ "https://image.shutterstock.com/image-vector/portrait-handsome-man-shirt-jeans-260nw-582282625.jpg", 
+
+  
+    "https://www.clipartmax.com/png/middle/243-2439854_mother-cartoon-clip-art-animated-mom-png.png" ,
+
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQnjDuVLtW4tKFc1eOdfWAJZoRMn0y41aonSA&usqp=CAU",
+
+    "https://st.depositphotos.com/1077687/1903/v/950/depositphotos_19036597-stock-illustration-cartoon-boy.jpg",
+
+    "https://lh5.googleusercontent.com/proxy/u3wfhrtMHisrmet-kk0cjfLVALpNBr2K5Nqwk850akEy1IvaZZPsy4r5A-Y_YLTE14Ghf4XAVFd8oKRZMsAuTg2imA=s0-d", 
+
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrAw6VrCC3nbntwKGxaX7uHZ4zW3UQnZmmvA&usqp=CAU"];
+var names = [ "Navjit Sandhu", "Seerath Sandhu", "Zorawar Sandhu",
+"Vir Sandhu(myself)", "Max", "Polo"];
+
+var i = 0;
+function update()
+{
+  i++;
+var numbers_of_family_member_in_array = 6
+if (i > numbers_of_family_member_in_array )
+{
+i = 0;
+}
+var imgupdate = images[i];
+var nameupdate = names[i];
+document.getElementById("nameupdate").src = nameupdate;
+document.getElementById("imgupdate").innerHTML = imgupdate;
+}
+
+
+</script>
+
+<body style="text-align: center;">
+        
+<h1>My Family</h1>
+<img src="https://www.pinclipart.com/picdir/middle/392-3927118_community-clipart-existence-family-of-four-cartoon-png.png"
+  style="width: 30%;"    id="imgupdate" >
+
+<h3 id="nameupdate"></h3>
+<button onclick="update()";>Next</button>
+
+
+
+
+
+
+
+    </body>
+</head>
